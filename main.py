@@ -6,7 +6,7 @@ import json
 
 def get_boss_info(server):
     api_url = 'https://api.arona.icu/raids/boss/info'
-    file_path = 'C:/Users/Administrator/Desktop/qqbot/QChatGPT/plugins/BlueArchiveData/token.json'
+    file_path = 'plugins/BlueArchiveData/token.json'
     try:
         # 打开文件并读取内容
         with open(file_path, 'r', encoding='utf-8') as file:
