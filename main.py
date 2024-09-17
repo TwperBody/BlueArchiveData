@@ -134,60 +134,60 @@ class KeywordActiveReviewPlugin(BasePlugin):
     @handler(GroupNormalMessageReceived)
     async def group_normal_message_received(self, ctx: EventContext):
         msg = ctx.event.text_message  # 这里的 event 即为 PersonNormalMessageReceived 的对象
-        if msg == "帮助" :
+        if msg == " 帮助" :
             self.ap.logger.debug("{} \n boss列表 <服务器>".format(ctx.event.sender_id))
             ctx.add_return("reply", ["{} \n boss列表 <服务器>".format(ctx.event.sender_id)])
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
-        elif msg == "boss列表 官服":
+        elif msg == " boss列表 官服":
             self.ap.logger.debug(get_boss_info(1).format(ctx.event.sender_id))
             ctx.add_return("reply", [ get_boss_info(1).format(ctx.event.sender_id)])
             ctx.add_return("reply", ["数据来源于 a r o n a . i c u ".format(ctx.event.sender_id)])
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
-        elif msg == "boss列表 B服":
+        elif msg == " boss列表 B服":
             self.ap.logger.debug(get_boss_info(2).format(ctx.event.sender_id))
             ctx.add_return("reply", [ get_boss_info(2).format(ctx.event.sender_id)])
             ctx.add_return("reply", ["数据来源于 a r o n a . i c u ".format(ctx.event.sender_id)])
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
-        elif msg == "boss列表 日服":
+        elif msg == " boss列表 日服":
             self.ap.logger.debug(get_boss_info(3).format(ctx.event.sender_id))
             ctx.add_return("reply", [ get_boss_info(3).format(ctx.event.sender_id)])
             ctx.add_return("reply", ["数据来源于 a r o n a . i c u ".format(ctx.event.sender_id)])
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
-        elif msg == "boss列表 综合":
+        elif msg == " boss列表 综合":
             self.ap.logger.debug(get_boss_info(4).format(ctx.event.sender_id))
             ctx.add_return("reply", [ get_boss_info(4).format(ctx.event.sender_id)])
             ctx.add_return("reply", ["数据来源于 a r o n a . i c u ".format(ctx.event.sender_id)])
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
-        elif msg == "boss列表 全球":
+        elif msg == " boss列表 全球":
             self.ap.logger.debug(get_boss_info(5).format(ctx.event.sender_id))
             ctx.add_return("reply", [ get_boss_info(5).format(ctx.event.sender_id)])
             ctx.add_return("reply", ["数据来源于 a r o n a . i c u ".format(ctx.event.sender_id)])
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
-        elif msg == "boss列表 港澳台":
+        elif msg == " boss列表 港澳台":
             self.ap.logger.debug(get_boss_info(6).format(ctx.event.sender_id))
             ctx.add_return("reply", [ get_boss_info(6).format(ctx.event.sender_id)])
             ctx.add_return("reply", ["数据来源于 a r o n a . i c u ".format(ctx.event.sender_id)])
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
-        elif msg == "boss列表 韩服":
+        elif msg == " boss列表 韩服":
             self.ap.logger.debug(get_boss_info(7).format(ctx.event.sender_id))
             ctx.add_return("reply", [ get_boss_info(7).format(ctx.event.sender_id)])
             ctx.add_return("reply", ["数据来源于 a r o n a . i c u ".format(ctx.event.sender_id)])
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
-        elif msg == "boss列表 亚服":
+        elif msg == " boss列表 亚服":
             self.ap.logger.debug(get_boss_info(8).format(ctx.event.sender_id))
             ctx.add_return("reply", [ get_boss_info(8).format(ctx.event.sender_id)])
             ctx.add_return("reply", ["数据来源于 a r o n a . i c u ".format(ctx.event.sender_id)])
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
-        elif msg == "boss列表 北美服":
+        elif msg == " boss列表 北美服":
             self.ap.logger.debug(get_boss_info(9).format(ctx.event.sender_id))
             ctx.add_return("reply", [ get_boss_info(9).format(ctx.event.sender_id)])
             ctx.add_return("reply", ["数据来源于 a r o n a . i c u ".format(ctx.event.sender_id)])
