@@ -1,4 +1,4 @@
-# HelloPlugin
+# BlueArchiveData
 
 <!--
 ## 插件开发者详阅
